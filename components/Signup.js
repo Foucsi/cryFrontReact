@@ -93,7 +93,7 @@ export default function Signup({ setDisplay }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div>
+        <div style={{ height: "50px" }}>
           <p>{msg}</p>
         </div>
 

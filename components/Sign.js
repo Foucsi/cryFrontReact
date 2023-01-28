@@ -1,6 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import styled from "styled-components";
+import { useState } from "react";
+
 import Signin from "./Signin";
 import Signup from "./Signup";
 
@@ -10,17 +11,11 @@ const Container = styled.div`
   width: 30%;
 `;
 
-const HeaderContainer = styled.div`
-  display: flex;
-  height: 20%;
-  width: 100%;
-`;
-
 export default function Sign() {
   const [display, setDisplay] = useState(true);
   return (
     <Container>
-      <HeaderContainer>
+      <div style={{ display: "flex", height: "20%", width: "100%" }}>
         <div
           style={{
             height: "100%",
@@ -49,7 +44,7 @@ export default function Sign() {
         >
           <p>SIGN UP</p>
         </div>
-      </HeaderContainer>
+      </div>
       {display ? <Signin /> : <Signup setDisplay={setDisplay} />}
     </Container>
   );

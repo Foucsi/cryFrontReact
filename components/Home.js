@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import Sign from "./Sign";
 
@@ -9,12 +10,10 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-function Home() {
+export default function Home() {
   return (
     <Container>
       <Sign />
     </Container>
   );
 }
-
-export default Home;
