@@ -1,24 +1,18 @@
 import styled from "styled-components";
+import Sign from "./Sign";
 
 const Container = styled.div`
-  align-items: center;
+  display: flex;
   height: 100vh;
   width: 100%;
-
-  div {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+  align-items: center;
+  justify-content: center;
 `;
 
 function Home() {
   return (
     <Container>
-      <div>
-        <h1>Hello</h1>
-      </div>
+      <Sign />
     </Container>
   );
 }
