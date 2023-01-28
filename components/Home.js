@@ -1,12 +1,25 @@
-import styles from "../styles/Home.module.css";
+import styled from "styled-components";
+
+const Container = styled.div`
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 
 function Home() {
   return (
-    <div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Template vide </h1>
-      </main>
-    </div>
+    <Container>
+      <div>
+        <h1>Hello</h1>
+      </div>
+    </Container>
   );
 }
 
