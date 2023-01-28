@@ -50,7 +50,7 @@ export default function Sign() {
           <p>SIGN UP</p>
         </div>
       </HeaderContainer>
-      {display ? <Signin /> : <Signup />}
+      {display ? <Signin /> : <Signup setDisplay={setDisplay} />}
     </Container>
   );
 }
